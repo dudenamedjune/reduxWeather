@@ -9,12 +9,16 @@ export default class SerchBar extends Component{
     this.onInputChange = this.onInputChange.bind(this);
   }
   onInputChange(event){
+
     this.setState({term: event.target.value})
 
   }
+  onFormSubmit(event){
+    event.preventDefault();
+  }
   render(){
     return(
-      <form className="input-group">
+      <form className="input-group" onSubmit={this.onFormSubmit}>
         <input  placeholder="Get a five-day forecast in your favorite citites"
           className="form-control"
           value={this.state.term}

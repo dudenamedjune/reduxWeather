@@ -1,6 +1,6 @@
 
 
-#Redux Weather Web App
+# Weather Web App
 Checkout this repo, install dependencies, then start the gulp process with the following:
 
 ```
